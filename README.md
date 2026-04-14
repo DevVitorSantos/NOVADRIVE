@@ -3,7 +3,7 @@
 > Projeto de aprendizado e evolução em Engenharia de Dados, cobrindo todo o ciclo: ingestão, orquestração, armazenamento em nuvem e visualização de dados.
 
 ---
-
+![Pipeline IA](https://seucafezinho.com.br/wp-content/uploads/2026/04/projeto-Engenharia-de-dados-BI.jpg)
 
 ## 📌 Visão Geral
 
@@ -51,6 +51,7 @@ A arquitetura é dividida em 4 camadas principais:
 ---
 
 ## 🔄 Pipeline de Dados (Airflow DAG)
+![Airflow](https://seucafezinho.com.br/wp-content/uploads/2026/04/airflow-to-snowflake.jpg)
 
 O DAG `postgres_to_snowflake_2` realiza a ingestão incremental dos dados do PostgreSQL para o Snowflake. Para cada tabela, são executadas duas tasks em sequência:
 
@@ -58,6 +59,8 @@ O DAG `postgres_to_snowflake_2` realiza a ingestão incremental dos dados do Pos
 2. **`load_data_<tabela>`** — carrega os registros novos do PostgreSQL para o Snowflake
 
 ### Tabelas ingeridas:
+![Tabelas](https://seucafezinho.com.br/wp-content/uploads/2026/04/schema.jpg)
+
 - `concessionarias`
 - `estados`
 - `vendedores`
@@ -69,6 +72,7 @@ O DAG `postgres_to_snowflake_2` realiza a ingestão incremental dos dados do Pos
 ---
 
 ## 📊 Dashboard — Nova Drive Motors
+![Dashboard](https://seucafezinho.com.br/wp-content/uploads/2026/04/dashboard.jpg)
 
 O dashboard foi construído no **Looker Studio** conectado ao Snowflake e apresenta:
 
